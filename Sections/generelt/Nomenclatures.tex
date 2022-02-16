@@ -1,0 +1,41 @@
+\makenomenclature
+\addcontentsline{toc}{chapter}{Nomenclature}
+
+
+%% This will add the subgroups
+%----------------------------------------------
+\renewcommand\nomgroup[1]{%
+  \item[\bfseries
+  \ifstrequal{#1}{A}{Physics Constants}{%
+  \ifstrequal{#1}{B}{Hardware}{%
+  \ifstrequal{#1}{C}{Other conventions}{}}}%
+]}
+%----------------------------------------------
+
+%% This will add the units
+%----------------------------------------------
+\newcommand{\nomunit}[1]{%
+\renewcommand{\nomentryend}{\hspace*{\fill}#1}}
+%----------------------------------------------
+
+% \nomenclature[B, 01]{For.}{{Udd.} \nomunit{\newline \textit{Besk}}}
+
+%%%
+\nomenclature[A, 01]{\(G\)}{{Gravitational constant} \nomunit{\newline \textit{Front-end counterpart to the EMP
+housing an lpGBT.}}}
+%%%
+\nomenclature[B, 01]{VL+:}{{Versatile Link+} \nomunit{\newline \textit{Used for high speed optical links }}}
+\nomenclature[B, 02]{EMP:}{{Embedded Monitoring Processor}\nomunit{\newline \textit{}} }
+\nomenclature[B, 03]{EMCI:}{{Embedded 
+Monitoring and Control Interface} \nomunit{\newline \textit{Front-end counterpart to the EMP
+housing an lpGBT.}}}
+
+
+\nomenclature[B, 04]{MPSoC:}{{Mulit purpose system-on-chip} \nomunit{\newline \textit{Includes programmable logic}}}
+
+%%%
+\nomenclature[C,01]{Ex}{Ex3}
+
+\nomenclature[C, 01]{PL:}{{Programmerable Logic} \nomunit{\newline \textit{(FPGA)}}}
+\nomenclature[C, 02]{PS: }{{Processing system} \nomunit{\newline \textit{Besk}}}
+\printnomenclature
