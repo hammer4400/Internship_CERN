@@ -6,7 +6,7 @@
 %----------------------------------------------
 \renewcommand\nomgroup[1]{%
   \item[\bfseries
-  \ifstrequal{#1}{A}{Physics Constants}{%
+  \ifstrequal{#1}{A}{Software}{%
   \ifstrequal{#1}{B}{Hardware}{%
   \ifstrequal{#1}{C}{Other conventions}{}}}%
 ]}
@@ -19,10 +19,14 @@
 %----------------------------------------------
 
 % \nomenclature[B, 01]{For.}{{Udd.} \nomunit{\newline \textit{Besk}}}
-
 %%%
-\nomenclature[A, 01]{\(G\)}{{Gravitational constant} \nomunit{\newline \textit{Front-end counterpart to the EMP
-housing an lpGBT.}}}
+\nomenclature[A, 02]{NFS}{{Network File System} \nomunit{\newline \textit{Besk}}}
+\nomenclature[A, 03]{IP}{{Intellectual Property} \nomunit{\newline \textit{Besk}}}
+\nomenclature[A, 04]{For.}{{Udd.} \nomunit{\newline \textit{Besk}}}
+
+
+
+
 %%%
 \nomenclature[B, 01]{VL+:}{{Versatile Link+} \nomunit{\newline \textit{Used for high speed optical links }}}
 \nomenclature[B, 02]{EMP:}{{Embedded Monitoring Processor}\nomunit{\newline \textit{}} }
@@ -33,9 +37,16 @@ housing an lpGBT.}}}
 
 \nomenclature[B, 04]{MPSoC:}{{Mulit purpose system-on-chip} \nomunit{\newline \textit{Includes programmable logic}}}
 
+\nomenclature[B, 05]{lpGBT:}{{Low power Giga Bit Transceiver} \nomunit{\newline \textit{Radiation tolerant ASIC}}}
+
+    
 %%%
 \nomenclature[C,01]{Ex}{Ex3}
 
 \nomenclature[C, 01]{PL:}{{Programmerable Logic} \nomunit{\newline \textit{(FPGA)}}}
-\nomenclature[C, 02]{PS: }{{Processing system} \nomunit{\newline \textit{Besk}}}
+\nomenclature[C, 02]{PS:}{{Processing system} \nomunit{\newline \textit{Besk}}}
+\nomenclature[C, 03]{FE:}{{Front-ends} \nomunit{\newline \textit{Besk}}}
+\nomenclature[C, 04]{IP:}{{Intellectual Property} \nomunit{\newline \textit{Besk}}}
+
+
 \printnomenclature
