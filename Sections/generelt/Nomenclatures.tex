@@ -1,14 +1,13 @@
 \makenomenclature
 \addcontentsline{toc}{chapter}{Nomenclature}
-
+%\addcontentsline{toc}{section}{Acronyms}
 
 %% This will add the subgroups
 %----------------------------------------------
 \renewcommand\nomgroup[1]{%
   \item[\bfseries
-  \ifstrequal{#1}{A}{Software}{%
-  \ifstrequal{#1}{B}{Hardware}{%
-  \ifstrequal{#1}{C}{Other conventions}{}}}%
+  \ifstrequal{#1}{A}{\LARGE{Acronyms}}{%
+  \ifstrequal{#1}{B}{\LARGE{Glossaries}}{}}%
 ]}
 %----------------------------------------------
 
@@ -20,33 +19,44 @@
 
 % \nomenclature[B, 01]{For.}{{Udd.} \nomunit{\newline \textit{Besk}}}
 %%%
-\nomenclature[A, 02]{NFS}{{Network File System} \nomunit{\newline \textit{Besk}}}
-\nomenclature[A, 03]{IP}{{Intellectual Property} \nomunit{\newline \textit{Besk}}}
-\nomenclature[A, 04]{For.}{{Udd.} \nomunit{\newline \textit{Besk}}}
-
-
+\nomenclature[A, 01]{\textbf{NFS}}{{Network File System} \nomunit{\newline \textit{A protocol for file sharing. Allows access of files over a network. }}}
+\nomenclature[A, 02]{\textbf{IP}}{{Intellectual Property} \nomunit{\newline \textit{A standalone module that can be used in the FPGA}}}
+\nomenclature[A, 03]{\textbf{XDC file:}}{{Xilinx Design Constraint file} \nomunit{\newline \textit{Defines a list of requirements for the design, in order to function correctly on the specific board}}}
 
 
 %%%
-\nomenclature[B, 01]{VL+:}{{Versatile Link+} \nomunit{\newline \textit{Used for high speed optical links }}}
-\nomenclature[B, 02]{EMP:}{{Embedded Monitoring Processor}\nomunit{\newline \textit{}} }
-\nomenclature[B, 03]{EMCI:}{{Embedded 
-Monitoring and Control Interface} \nomunit{\newline \textit{Front-end counterpart to the EMP
-housing an lpGBT.}}}
+\nomenclature[A, 04]{\textbf{VL+:}}{{Versatile Link+} \nomunit{\newline \textit{Used for high speed optical links }}}
+\nomenclature[A, 05]{\textbf{EMP:}}{{Embedded Monitoring Processor}\nomunit{\newline \textit{\vspace{-0.3 cm}}} }
+\nomenclature[A, 06]{\textbf{EMCI:}}{{Embedded Monitoring and Control Interface}\nomunit{\newline \textit{\vspace{-0.3 cm}}}}
+\nomenclature[A, 08]{\textbf{SoC:}}{{System-on-chip} \nomunit{\newline \textit{A SoC that includes several microprocessors}}}
+
+\nomenclature[A, 08.2]{\textbf{MPSoC:}}{{Multiprocessor system-on-chip} \nomunit{\newline \textit{A SoC that includes several microprocessors}}}
+\nomenclature[A, 08]{\textbf{lpGBT:}}{{Low power Giga Bit Transceiver} \nomunit{\newline \textit{Radiation tolerant ASIC}}}
+\nomenclature[A, 09]{\textbf{B2B:}}{{board-to-board connector} \nomunit{\newline \textit{Connection correlation between two boards }}}
+
+\nomenclature[A, 10]{\textbf{PL:}}{{Programmable Logic} \nomunit{\newline \textit{The FPGA part}}}
+\nomenclature[A, 11]{\textbf{PS:}}{{Processing Subsystem} \nomunit{\newline \textit{Executes the applications and system programs}}}
+\nomenclature[A, 12]{\textbf{FE:}}{{Front-ends} \nomunit{\newline \textit{E.g. a sensor in the detector.}}}
+\nomenclature[A, 14]{\textbf{MGT:}}{{Multi-Gigabit Transceiver} \nomunit{\newline \textit{Capable of operating at serial bit rates above 1 Gigabit/second. }}}
+\nomenclature[A, 15]{\textbf{EMI:}}{{Electromagnetic interference} \nomunit{\newline \textit{(Unwanted noise in a circuit.)}}}
+\nomenclature[A, 16]{\textbf{LVDS:}}{{Low-Voltage Differential Signaling} \nomunit{\newline \textit{ Digital interface for serial communication, over two cables. Reduces EMI compared to single-ended connections. }}}
+\nomenclature[A, 18]{\textbf{VSC}}{{Visual Studio Code} \nomunit{\newline \textit{Source code editor, with support of several languages.\vspace{1.5 cm}}}} %%% \vspace{1 cm}
 
 
-\nomenclature[B, 04]{MPSoC:}{{Mulit purpose system-on-chip} \nomunit{\newline \textit{Includes programmable logic}}}
-
-\nomenclature[B, 05]{lpGBT:}{{Low power Giga Bit Transceiver} \nomunit{\newline \textit{Radiation tolerant ASIC}}}
-
-    
 %%%
-\nomenclature[C,01]{Ex}{Ex3}
-
-\nomenclature[C, 01]{PL:}{{Programmerable Logic} \nomunit{\newline \textit{(FPGA)}}}
-\nomenclature[C, 02]{PS:}{{Processing system} \nomunit{\newline \textit{Besk}}}
-\nomenclature[C, 03]{FE:}{{Front-ends} \nomunit{\newline \textit{Besk}}}
-\nomenclature[C, 04]{IP:}{{Intellectual Property} \nomunit{\newline \textit{Besk}}}
 
 
+\nomenclature[B, 01]{\textbf{TTY Driver}}{{Teletype writer} \nomunit{\newline \textit{Provide an interface for the terminal. Controlling both the flow of data and the format}}}
+\nomenclature[B, 02]{\textbf{U-boot}}{{} \nomunit{\newline \textit{Boot loader used in Linux based embedded systems. Both a first and second stage bootloader.}}}
+\nomenclature[B, 03]{\textbf{firewalld}}{{} \nomunit{\newline \textit{Firewall management tool on Linux OS}}}
+\nomenclature[B, 04]{\textbf{gpiochip<n>}}{{} \nomunit{\newline \textit{gpiochip can be thought of as an "GPIO controller" i.e. one that controls several GPIO's}}}
 \printnomenclature
+
+
+
+
+
+
+
+
+

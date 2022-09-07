@@ -1,4 +1,5 @@
-\documentclass[11pt,twoside,a4paper,openright]{report}
+\documentclass[11pt,twoside,a4paper,openany]{report}
+% \documentclass[11pt,twoside,a4paper,openright]{report}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Language, Encoding and Fonts
 % http://en.wikibooks.org/wiki/LaTeX/Internationalization
@@ -31,13 +32,12 @@
 % http://en.wikibooks.org/wiki/LaTeX/Colors
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % load a colour package
-\usepackage{xcolor}
+\usepackage[table,xcdraw]{xcolor}
 \definecolor{aaublue}{RGB}{33,26,82}% dark blue
-
+\definecolor{codeblack}{RGB}{33,26,82}% dark blue
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
-\definecolor{backcolour}{rgb}{0.96,0.96,0.96}
 \definecolor{backcolour}{rgb}{0.96,0.96,0.96}
 \definecolor{newyellow}{rgb}{1,1,0.72}
 
@@ -150,14 +150,24 @@
 \usepackage{enumitem}
 \usepackage{listings}
 \usepackage{amssymb}
-\usepackage{nomencl}
 \usepackage{siunitx}
 \usepackage{hyperref}
+
+\usepackage{nomencl}
 \usepackage{etoolbox}
+\patchcmd{\thenomenclature}
+  {\section*{\nomname}}
+  {\section*{\MakeUppercase{\nomname}}}
+  {}{}
+\patchcmd{\thenomenclature}
+  {\chapter*{\nomname}}
+  {\chapter*{\MakeUppercase{\nomname}}}
+  {}{}
+ 
 
 \usepackage{minted}
-
-
+\usepackage{caption}
+\usepackage{subcaption}
 
 % Delete this if you want black/white code.
 \lstdefinestyle{mystyle}{
@@ -195,14 +205,13 @@
 	pdftitle={Title},%
 	pdfsubject={Subject},%
 	bookmarksnumbered=true,%
-	colorlinks=false,%
+	colorlinks=true,%
 	citecolor=black,%
-	filecolor=black,%
-	linkcolor=black,% you should probably change this to black before printing
-	urlcolor=black,%
+	filecolor=codeblack,%
+	linkcolor=codeblack,% you should probably change this to black before printing
+	urlcolor=blue,%
 	pdfstartview=FitH%
-    urlcolor=blue,
+    urlcolor=codeblack,
 }
 
-
-
+    

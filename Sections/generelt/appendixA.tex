@@ -1,62 +1,154 @@
-\chapter{Diary}\label{ch:appDiary}
-\section*{Genral work related information} \newline
- Working hours 8:30 - 17:30 Monday to Friday.
-\section*{Daily worktasks}
+\chapter{Daily Diary}\label{ch:appDiary}
+\section*{General work related information}
+ Working hours are 8:30 - 17:30 Monday to Friday. \newline
+ Each month provide a 2,5-day vacation
+\section*{Dairy}
 \begin{description}
-\item[(17/01)] First day at CERN. Introduced to my new colleagues and project.
-\item[(18/01)] Introduction to the software tools and enviorments used.  
-\item[(19/01)] Setup enviorments for developing. 
-\item[(20/01)] Going through the manual by Morten, and looked into cross compiling.
-\item[(21/01)] Researching PetaLinux, and started using VIM for developing C programs. First 'Hello world' on the EMP.
+\item[(17/01)] First day at CERN. Introduced to my new colleagues and assigned some tasks to gain knowledge of the devices used. Furthermore, I was shown around the building and given some practical information.
+\item[(18/01)] Introduction to the software tools and environments used. Furthermore, I gained more practical information, such as: how to rent a bike and how to work during the Covid. Here I was allowed to telework if I wanted. But I chose to be at the site, which most people at CERN were not allowed to.
+\item[(19/01)] Began to set up the developing environments, including the Linux operating system, creating accounts, etc. 
+\item[(20/01)] A intern before me has made a manual of his work. I began going through it, learning as much as possible about his work. Today, I especially looked into cross-compiling. 
+\item[(21/01)] Today, I looked into the manual again, and this time I looked into PetaLinux. Furthermore, I supplemented the information in the manual with my own research. When I got my head around it, I started using VIM to develop C programs. The first try was a 'Hello world' on the EMP.
 \item[(22/01)] Weekend.
 \item[(23/01)] Weekend.
-\item[(24/01)] Day off for taking the online project exam.
-\item[(25/01)] Introduced to the NFS filesystem.
-\item[(26/01)] Looking into developed code for communcation with the EMCI, which reads and writes registers of the lpGBT.
-\item[(27/01)] Learning of Makefiles. Beginning developing of a cpp program to enable the clock generator present on the EMP. 
-\item[(28/01)] Continuing working with the program. 
+\item[(24/01)] As I had a late exam at Aalborg University, I had to take this day off to take the exam. I was allowed to take my project exam online, so I didn't have to travel from Geneva to Aalborg.
+\item[(25/01)] Introduced to the NFS file system. This was only briefly mentioned in the manual, so I had to do my research in this field. Which was not hard, as a lot of information is given online. 
+\item[(26/01)] Looking into developed code for communication with the EMCI, which reads and writes registers of the lpGBT. This was developed by another intern before me. It was also great to see what others had achieved during their time. 
+\item[(27/01)] Learning of Makefiles. It was not a must, but it is a great tool to learn. Hereafter, a bigger task was assigned to me. This task is about developing a c++ program to enable the clock generator present on the EMP.
+
+\item[(28/01)] This program takes some time; hence I will continue working on it for some days. Furthermore, the environments are still new to me, which is not improving my efficiency. 
 \item[(29/01)] Weekend
 \item[(30/01)] Weekend
-\item[(31/01)] Debugging the program with help from Daniel. 
-\item[(1/02)] Continuing debugging and working on the code
-\item[(2/02)] Learning about the I2C switch present on the board. 
-\item[(3/02)] Getting into AirHDL. Further understanding for lpGBT, registers, AXI and I2C 
-\item[(4/02)] Remote PC stopped working. Begining a new task of devoloping a GUI in python.
+\item[(31/01)] Still working on the program, and currently, some errors are appearing in the program, and I have a hard time figuring out why. I asked my colleague, Daniel, if he had time to look at it.
+\item[(1/02)] I continue debugging and working on the program. 
+\item[(2/02)] I am trying to research more about the I2C switch present on the board and all other peripherals used in the program. To check if I might have missed something. But for now, I am trying to put the code aside for a short time. 
+\item[(3/02)] Getting into AirHDL. Furthermore, gaining more knowledge of the lpGBT, the registers, and the AXI protocol
+\item[(4/02)] This morning, a failure suddenly appeared. The remote PC stopped working, and my colleagues and I do not know why this happened. But this failure is critical, as the development can not continue before it is solved. While my colleagues are trying to figure out why. I am beginning with a new task of developing a GUI in python to keep me busy.
 \item[(5/02)] Weekend
 \item[(6/02)] Weekend
-\item[(7/02)] Looking into Python
-\item[(8/02)] Python excercise - Develope a GUI in .py which use a function from a .cpp file. 
-\item[(9/02)] Excersise finished. Researching a solution for communication between the remote PC and the EMP, in such way that the remote PC proccessing the GUI.
-\item[(10/02)] Further reasearching, and coding for test different approaches. 
-\item[(11/02)] Looked further into an API. Including how bindings in .py (marshalling) works, Sockets, researching of what a IPC is, an the RESTful API architecture.  
+\item[(7/02)] I need to use python for this task, and ss that is new to me, I'm starting to research online to learn the language. Here I also supplemented with a book from the library. 
+\item[(8/02)] To break the tasks into smaller bites, I will first make a small GUI in python, which uses a function from a .cpp file. This program will also prove some of its operations. 
+\item[(9/02)] The exercise is completed. So I began researching a way to communicate between the remote PC and the EMP so that the remote PC is processing the GUI.
+\item[(10/02)] Further researching yesterday's subject. Also, trying to make test scripts for testing different approaches. Here I had the most success with a TCP socket for communication.
+\item[(11/02)] Beginning to research what an API is, especially what a RESTful API is, and how it could be used in this application. This also includes how bindings in .py (marshaling) work, Sockets. I also looked into what an IPC is, which was shown not to be valuable.
 \item[(12/02)] Weekend
 \item[(13/02)] Weekend
-\item[(14/02)] Beginning the 'Docker-getting-started' exercise
-\item[(15/02)] Finished 'Docker-getting-started', dived further into docker by following some certification tasks and questions.
-\item[(16/02)] Read Specifications documents regarding the EMP and further reading of Mortens manual
-\item[(17/02)] Remote PC working again. Starting developing code for EMP.
-\item[(18/02)] Looking further into how to connect the GUI with the EMP. Succesfully etablished a connection via a TCP socket between a .py and a .cpp code on two different devices.  
+\item[(14/02)] The Remote computer is still broken, and my task is done. So I had some days when I could not continue developing. Therefore, I was given an assignment in my interest: trying to understand Docker. Beginning with the 'Docker-getting-started' exercise
+\item[(15/02)] Finished 'Docker-getting-started', but I learned that there still was a lot I did not understand, and the tutorial did not cover, so I dived further into it by following some certification tasks and questions.
+\item[(16/02)] Today, I started to read some specifications documents regarding the EMP and further read Morten's manual. Even read some sections twice. 
+\item[(17/02)] Finally, the remote PC is working again. But unfortunately, the issue could not be fixed, and the whole system was therefore remounted. Which was a setback. Luckily, no work was deleted as a backup was made beforehand. So now, I can continue developing code for the EMP.
+\item[(18/02)] Looking further into connecting the GUI with the EMP. Successfully established a connection via a TCP socket between a .py and a .cpp code on two different devices.  
 \item[(19/02)] Weekend
 \item[(20/02)] Weekend
-\item[(21/02)] Implemented multi thredding in code to trying to acomplish full duplex communicaton between server/client.
-\item[(22/02)] Further working on implementing multi threadding in code, and made it succesfully. The server/client can now send and recieve at the same time.  
-\item[(23/02)] Preparing Daniel's leaving at CERN. In this regard I looked further into communication between the EMP and the EMCI. Furthermore, trying to establish a broad understanding of the elements involved in the project, but with a deep understanding within my fiels of work. In such way, that I, with the help from Vladimir can continue the project, in a painless way. Hopefully any questions that might be relevant for this project in the future, will at this time be asked.  
-\item[(24/02)] Looked into bit-banging, and the emp-intr code. 
-\item[(25/02)] Meeting today for the ATLAS DCS front-end (EMCI - Embedded Monitoring and Control Interface) and back-end (EMP - Embedded Monitoring Processor).
+\item[(21/02)] Implemented multi-threading in code to accomplish full-duplex communication between server/client.
+\item[(22/02)] Further working on implementing multi-threading in the code, which was made successfully. The server/client can now send and receive at the same time.  
+\item[(23/02)] Preparing Daniel's leaving at CERN. In this regard, I looked further into communication between the EMP and the EMCI. Furthermore, I am trying to establish a broad understanding of the elements involved in the project but with deep knowledge within my field of work. In such a way, I, with the help of Vladimir, can painlessly continue the project. Hopefully, any questions that might be relevant for this project in the future will at this time be asked.  
+\item[(24/02)] Looked more into bit-banging and the 'EMP interrupt'-code to get more knowledge within the field. 
+\item[(25/02)] Meeting today for the ATLAS DCS front-end (EMCI - Embedded Monitoring and Control Interface) and back-end (EMP - Embedded Monitoring Processor). This meeting was beneficial, as I got an insight into the work of other groups. 
 \item[(26/02)] Weekend
 \item[(27/02)] Weekend
-\item[(28/02)] Problems with the clock. Trying to debug, and asking Daniel for help.
-\item[(29/02)] 
-\item[(01/03)] 
-\item[(02/03)] 
-\item[(03/03)] 
-\item[(04/03)] 
-\item[(05/03)] 
-\item[(06/03)] 
-\item[(07/03)] 
-\item[(08/03)] 
-\item[(09/03)] 
-\item[(10/03)] Clock configuration finally works! Found the issue, which was cause by writing/reading 16-bit instead of 8-bit.
-\item[(11/03)] 
+\item[(28/02)] Problems occurred with the configuration of the clock. I spent most of the day looking at the code and trying to debug it.
+\item[(29/02)] Solved the issue from yesterday. Now I'm continuing to develop for configuration of the clock present on the EMP. 
+\item[(01/03)] The features of the code take some time to get my head around. So I continued working and researching. 
+\item[(02/03)] Still working on the code. I'm almost there, but I need to implement a few more things. 
+\item[(03/03)] One thing that bugged me was that I had some trouble with the I2C slave addresses. But today, I managed to get it right. The mistake was that I tried to write 16-bit to an I2C which only takes 8 bits. 
+\item[(04/03)] Today, I am fetching the data generated from ClockBuilder PRO to the C code.
+\item[(05/03)] The program can now read from one register. This is an excellent sign that it will work.
+\item[(06/03)] Today, both the read and write functions are implemented. This means that the code now successfully can write to several registers and afterward check them by reading. But unfortunately, I  encounter a problem with register higher than 0xFF or one byte. 
+\item[(07/03)] The code is almost done. But it still has problems with writing to some registers. Trying to research the issue. 
+\item[(08/03)] Today, I am still trying to solve the error occurring when writing to register higher than 0xFF. Trying to read through the manual for the board and clock registers to see if I could find any information that could help me.
+\item[(09/03)] Found the issue. I had to use a special register called a page register. This solved the problem. 
+\item[(10/03)] The error was changed throughout the code, and now the clock configuration program finally works! I further checked if the EMCI was detecting it, and it was. This means that the team no longer needs the Silabs clock configuration kit. 
+\item[(11/03)] After I finished the program for configuring the clock, I am now starting a new task. Here I'm going to make a GPIO in the EMP PL that can interact with the PS through C code. I am pleased to be assigned this task. 
+\item[(12/03)] Today, there was some new tools I had to be familiar with using. One of them was AirHDL, a tool that helps one get started with registers in VHDL. In AirHDL, I created a register map to be imported to the Vivado Project at a later point.
+\item[(13/03)] Yesterday, I got more familiar with AirHDL. Today, I have to learn about Vivado. Vivado is software used to synthesize the VHDL code and further utilize it on the board. I began to write some small RTL code to the GPIO in Vivado.
+\item[(14/03)] Reading through the documents regarding the Vivado project for the EMP.
+\item[(15/03)] Researching information about the Linux Device Tree to understand better how the PL is related to the PS.
+\item[(16/03)] Further researching and trying to make some small code. 
+\item[(17/03)] Today, I had to familiarize myself with the device tree in Linux. This is because the firmware I will create in Vivado has to be configured correctly in the Linux machine before I can program it. Furthermore, I looked into Userspace I/O.  
+\item[(18/03)] Vacation. I took this day off as I got a visit from Denmark.
+\item[(19/03)] Weekend
+\item[(20/03)] Weekend 
+\item[(21/03)] Writing the GPIO block code and looking into the FSM of the emp\_lpgbt block. This FSM is pretty complex, and there were no diagrams to show its functions, which makes it harder to grasp. 
+\item[(22/03)] Unfortunately, I cannot download a complete constraint file of the board used in this project, So I had to make this myself. It took some while to understand the basics and to code it. For now, the constraint should only allow me to use the pins for some GPIO's on the EMP.
+\item[(23/03)] A problem occurred when booting the EMP. For some reason, the EMP seems not to connect with the NFS. This is a big issue, as the development can not continue without the EMP. For that reason, I am prioritizing solving this issue.
+\item[(24/03)] The error are still present. Trying to debug by validating all connections, and other 'easy-to-solve' problems, before continuing to more complex debugging. Unfortunately, it is hard to locate the problem.
+\item[(25/03)] The problem is still present. I asked Daniel for help, but we didn't manage to solve it. He has not tried something like this before. But I am continually trying to locate the problem.   
+\item[(26/03)] Weekend
+\item[(27/03)] Weekend
+\item[(28/03)] Trying a new approach to debugging. As I might suspect the firewall to be a problem, I'm now trying to create a virtual Linux machine to act as a new client. If I can't connect to the host, it might be some firewall configurations. If I can connect - debugging the NFS will be easier.
+\item[(29/03)] Cannot connect. My hypothesis of the Firewall configurations seems to be right. Hence I looked into the Firewall configurations on the machine. But I do not know how that works on Linux, so I had to do my research first.
+\item[(30/03)] Daniel's last day at CERN. We went out to a restaurant at launch with a small team from Atlas. The rest of the day was used to change the firewall permissions. 
+\item[(1/04)] I Have some trouble with the firewall configurations, and I am also starting to be uncertain about if the firewall causes the problem. 
+\item[(2/04)] Weekend
+\item[(3/04)] Weekend
+\item[(4/04)] Finally managed to solve the problem, and the firewall caused it. It was most likely caused by a shortage at night, which made the Remote PC reboot with another very strict default firewall setting. This setting would not allow the NFS and hence the problem.  
+\item[(5/04)] The cause of the problem, and the solutions to solve it, were documented. After that, I could continue with the EMP GPIO task.
+\item[(6/04)] Today, I tried to generate the bitstream from Vivado and load the firmware on EMP. The code is not complete yet, but I wanted to try this out before continuing. 
+\item[(7/04)] Today, the firmware from Vivado has been utilized on the machine, and to test it, I am now starting to make C++ code for controlling the GPIO. But unfortunately, I had difficulties finding the GPIO made in the PL in userspace.
+\item[(8/04)] Trying to find the GPIO in userspace. Going through all my steps and finally found out that the problem most likely was caused by the VHDL code. 
+\item[(9/04)] Weekend
+\item[(10/04)] Weekend
+\item[(11/04)] Holiday 
+\item[(12/04)] Vacation
+\item[(13/04)] Vacation
+\item[(14/04)] Vacation
+\item[(15/04)] Holiday
+\item[(16/04)] Weekend
+\item[(17/04)] Weekend
+\item[(18/04)] Holiday
+\item[(19/04)] Continued working on the GPIO exercise and got a little breakthrough as I now can reach the GPIO from userspace. 
+\item[(20/04)] The C++ code I wrote to engage with the GPIO crashes the EMP. Trying to figure out what the problem is caused by. I tried to look into EMP specifications, schematic, and layout to find answers, but I could not find any. 
+\item[(21/04)] My supervisor suggested I could make a small program for reading the temperature on the Zynq chip. Therefore, I left my ongoing project for the GPIO for now and instead started developing this program.
+\item[(22/04)] As I already had done a small program for communication, I would like to implement it in this task. Such communication can be established from the EMP, which will function as a client, and will send the temperature data to the PC, which will be the host. Finally, the PC will display the data in a nice user-friendly GUI. 
+\item[(23/04)] Weekend
+\item[(24/04)] Weekend
+\item[(25/04)] Starting to make the GUI in Python, which should display the temperature values sent from the EMP. Here there were some challenges I did not expect. Such as how to update the interface every time new data is sent.
+\item[(26/04)] Today, I switched my task to continue with the GPIO, as I got an idea I wanted to try out. And it did pay off, as I'm now successfully turning a pin on and off through the C++ code.
+\item[(27/04)] After the breakthrough yesterday, I continued working on the GPIO program. Now extend it so it can read/write from multiple GPIO's.
+\item[(28/04)] At first, I was unaware that the GPIO's used was LVDS. This made me confused with some of my measurements, but after figuring that out, I was able to continue the development.
+\item[(29/04)] Today was used to figure out a procedure to test the GPIO's. The conclusion was to use the GPIO's to validate each other. More about that in the GPIO chapter above. 
+\item[(30/04)] Weekend
+\item[(01/05)] Weekend
+\item[(02/05)] When programming this code, the results needed to be accurate so that the program would be trustworthy. This means I used a lot of the day to measure if every combination was done right to be safe.
+\item[(03/05)] Today, I was finally happy with the result and the user-friendly printout from the program. Furthermore, I showed my results to Vladimir and how the program could be used. 
+\item[(04/05)] The program is now finished. Vladimir would like me to write some documentation of what I had done during the time of my internship, as it will help the next intern to catch up with my work.
+\item[(05/05)] Starting from scratch with the documentation. Luckily, I have written a diary for the report, which made writing the documentation easier.  
+\item[(06/05)] Writing documentation. Starting with the GPIO test. 
+\item[(07/05)] Weekend
+\item[(08/05)] Weekend
+\item[(09/05)] Not much going on besides continuing to write the documentation. 
+\item[(10/05)] Writing documentation. The explanation in the documentation also helped me better understand the theory behind what I had done.
+\item[(11/05)] Writing documentation. 
+\item[(12/05)] Writing documentation. 
+\item[(13/05)] Writing documentation, and attending to seminar from Deep-Mind.
+\item[(14/05)] Weekend
+\item[(15/05)] Weekend
+\item[(16/05)] Writing documentation. 
+\item[(17/05)] Writing documentation. 
+\item[(18/05)] Writing documentation. 
+\item[(19/05)] Writing documentation. 
+\item[(20/05)] Finishing the documentation. 
+\item[(21/05)] Weekend
+\item[(22/05)] Weekend
+\item[(23/05)] Slowly preparing for my leave at CERN. Starting to share all the work done to GitLab. So that any members of CERN can get the source code, etc. 
+\item[(24/05)] Making some last modifications to the documentation. Furthermore, I gave a walk-through to Vladimir of all the work done during the time.
+\item[(25/05)] Today, some drilling had to be done in my laboratory. This meant that I, with the help of Vladimir, had to move all the equipment out of the lab and, again, move all the equipment back. This was necessary to protect the equipment.  
+\item[(26/05)] Holiday
+\item[(27/05)] Holiday
+\item[(28/05)] Weekend
+\item[(29/05)] Weekend 
+\item[(30/05)] In the past workday, I put all the equipment back into my laboratory. Today, I have the job of connecting all devices again. This is not necessarily easy, as the many different components must be connected just right to work properly. Furthermore, when putting it all back together again, I had the opportunity to connect it all in a new and better way. 
+\item[(31/05)] As I have saved up some holidays, this is my last day at CERN. I went by writing the last things to the documentation and trying to fix a last-minute problem. Furthermore, saying goodbyes to my colleagues and finished the day with a social gathering after work. 
+\item[(01/06)] Vacation
+\item[(02/06)] Vacation
+\item[(03/06)] Vacation
+\item[(04/06)] Weekend
+\item[(05/06)] Weekend
+\item[(06/06)] Holiday
+\item[(07/06)] Vacation
+\item[(08/06)] Vacation
+\item[(09/06)] Vacation
+\item[(10/06)] Vacation
 
 \end{description}
